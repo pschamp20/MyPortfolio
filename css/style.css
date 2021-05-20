@@ -1,0 +1,916 @@
+/*general styling*/
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins";
+}
+
+.container {
+    overflow-x: hidden;
+}
+
+/*navbar style starts here*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+.brand-name{
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.navbar-links li{
+    list-style-type: none;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 1rem 1rem;
+    display: block;
+}
+
+.navbar-links li:hover{
+    background-color: #e4e4e4;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+
+/*backgroung styling*/
+
+
+.back{
+    width: 100%;
+    height: 1000px;
+    background-image: url("../images/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+/*home page styling */
+
+.home{
+    font-size: 4rem;
+    font-weight: bold;
+    position: relative;
+    top: 297px;
+    text-align: center;
+
+}
+
+
+
+/*about page styling*/
+
+
+.about {
+    background-color: #F8F8F8;
+    position: relative;
+    top: -1.2rem;
+    padding-bottom: 6rem;
+}
+
+.about h3 {
+    padding: 4rem 4rem 0 4rem;
+}
+
+.about p {
+    font-size: 1.8rem;
+    padding: 0 4rem 0 4rem;
+}
+
+.about h4 a{
+    font-size: 1.8rem;
+    padding-left:4rem;
+    text-decoration: none;
+    color: #cc0000;
+}
+
+.about ul li{
+    display: inline-block;
+    margin: 0 1rem 0 2rem;
+    padding: .3rem;
+    font-size: 20px;
+}
+
+.about ul li a {
+    text-decoration: none;
+    color: #8c8c8c;
+}
+
+.cool-links::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #cc0000;
+    transition: width .5s;
+}
+
+.cool-links:hover::after {
+    width: 100%;
+    transition: width .5s;
+}
+
+
+/*services style starts here*/
+
+
+
+.services{
+    padding-bottom: 6rem;
+
+}
+.services h3 {
+    padding: 2rem 4rem 0 4rem;
+}
+
+.services p {
+    font-size: 2rem;
+    padding: 0 4rem;
+}
+
+.skill ul {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2.99rem;
+    margin-right: 10rem;
+    padding: 1rem;
+}
+
+.skill ul li {
+    list-style-type: none;
+    background-color: #e7e7e7;
+    width: 20rem;
+    height: 12rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+}
+
+.skill ul li img {
+    width: 8rem;
+    height: 8rem;
+    padding: 0.5rem;
+}
+
+.skill ul li:hover {
+    display: inline-block;
+    transform: scale(0.9, 0.9);
+}
+
+
+/*education stylr starts here*/
+
+
+
+
+.degree {
+    background-color: #161515;
+    width: 100%;
+    color: white;
+    padding-bottom: 7rem;
+
+}
+
+.degree h4{
+    padding: 4rem 4rem 0 4rem;
+}
+
+.qualify{
+    margin-left: 4rem;
+    border-collapse:collapse
+}
+
+.qualify tr {
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.qualify tr td {
+    padding-left: 1.8rem;
+    border-bottom: 1px solid black;
+}
+
+.qualify tr:hover{
+    background-color: black;
+}
+
+.tech{
+    margin-left: 4rem;
+    margin-top: 4rem;
+    align-items: left;
+}
+
+.tech th {
+    text-align: left; 
+    padding-left: 1.6rem;
+    padding-bottom: 0.8rem;
+
+}
+.tech tr {
+    font-size: 1rem;
+
+}
+
+.tech tr td {
+    padding-left: 1.8rem;
+    padding-right: 15rem;
+    padding-bottom: 0.1rem;
+    color: #999999;
+}
+
+
+/*contact style starts here*/
+
+
+.contact {
+
+    width: 100%;
+    background-color: rgb(236, 24, 61);
+    color: white;
+    margin-top: -1.2rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact h3 {
+    padding: 4rem 4rem 0 4rem;
+}
+
+.contact p {
+    padding-left: 4rem;
+    font-size: 2rem;
+}
+
+.touch {
+    padding-left: 4rem;
+}
+
+.name input{
+    margin-right: 10px;
+    padding: 5px;
+    width: 20%;
+    height: 40px;
+    display: inline-block;
+    background-color:rgba(0, 0, 0, 0.27);
+    color: white;
+    border-color: rgba(0, 0, 0, 0.4);
+    border-style: none;
+}
+
+.message textarea{
+    margin-top: 1.5rem;
+    padding: 5px;
+    display: inline-block;
+    width: 40.6%;
+    background-color:rgba(0, 0, 0, 0.27);
+    color: white;
+    border-color: rgba(0, 0, 0, 0.4);
+    border-style: none;
+    resize: horizontal;
+}
+
+.name input::placeholder{
+    color: white;
+    font-family: "poppins";
+}
+
+.message textarea::placeholder{
+    color: white;
+    font-family: "poppins";
+}
+
+
+button[type=submit] {
+    margin: 1.5rem 0;
+    font-style: bold;
+    text-align: center;
+    width: 41%;
+    height: 3rem;
+    font-weight: 500;
+    font-size: 1.3rem;
+    border-radius: 30px;
+    border-style: none;
+    padding-left: 1rem;
+}
+
+button:hover {
+    background-color: #161515;
+    color: white;
+    transition: .2s ease-in-out;
+}
+
+#status {
+    width: 39%;
+    text-align: center;
+    margin-left: 4rem;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+#status.success{
+    background-color: rgb(236, 24, 61);
+    animation: status 4s forwards;
+}
+
+#status.error{
+    background-color: rgb(236, 24, 61);
+    animation: status 4s forwards;
+}
+
+@keyframes status {
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.contact ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    text-align: center;
+}
+
+.contact ul li {
+    list-style-type: none;
+    float: left;
+
+}
+
+.contact ul li a{
+    text-decoration: none;
+    color: rgb(211, 211, 211, 7);
+    margin-right: 50px;
+    padding: 5px;
+    display: inline-block;
+}
+
+
+.cool-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    transition: width .5s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    transition: width .5s;
+}
+
+
+
+
+
+@media (max-width :1570px){
+    .skill ul li {
+        margin-bottom: 1rem;
+        width: 15rem;
+        height: 10rem;
+        font-size: 0.7rem;
+    }
+
+    .skill ul li img {
+        width: 7rem;
+        height: 7rem;
+    }
+}
+
+
+@media (max-width :1245px){
+
+    .skill ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+
+    .skill ul li {
+        margin-bottom: 1rem;
+        width: 25rem;
+        height: 10rem;
+        font-size: 0.7rem;
+    }
+
+    .skill ul li img {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    
+    .tech {
+        margin-top: 2rem;
+        margin-left: 6rem;
+    }
+
+    .tech tr th {
+        margin: 0;
+        padding-left: 0;
+        padding-right: 4rem;
+    }
+
+    
+    .tech tr td {
+        margin: 0;
+        padding-left: 0;
+        padding-right: 8rem;
+    }
+
+
+
+
+}
+
+
+
+
+
+@media (max-width :800px) {
+
+    .brand-name{
+        font-size: 1rem
+    }
+
+    .home {
+        font-size: 2.5rem;
+    }
+    .back {
+        height: 900px;
+    }
+
+    .about p{
+        font-size: 1.1rem;
+    }
+
+    .about h4 a {
+        font-size: 1.3rem;
+    }
+
+    .about ul li a {
+        font-size: 0.9rem;
+    }
+
+    .services {
+        width: 100%;
+    }
+
+    .services p {
+        font-size: 1.1rem;
+    }
+
+    .skill ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .skill ul li {
+        margin-bottom: 1rem;
+        width: 25rem;
+        height: 10rem;
+        font-size: 0.9rem;
+    }
+
+    .skill ul li img {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .qualify p{
+        font-size: 0.8rem;
+    }
+
+    .tech th,td {
+        font-size: 0.8rem;
+    }
+    
+    .tech tr td {
+        padding-left: 0rem;
+        padding-right: 5rem;
+        padding-bottom: 0.1rem;
+        color: #999999;
+    }
+
+    .contact p {
+        margin-top: -1px;
+        font-size: 1.2rem;
+    }
+
+    button[type=submit] {
+        margin: 1.5rem 0;
+        font-style: bold;
+        text-align: center;
+        width: 41%;
+        height: 2.5rem;
+        font-weight: 400;
+        font-size: 1rem;
+        border-radius: 30px;
+        border-style: none;
+        padding-left: 1rem;
+    }
+
+    .contact ul {
+       margin-left: 2.1rem;
+    }
+
+    .contact ul li {
+        font-size: 0.8rem;
+        margin-right: -30px;
+    }
+
+
+}
+
+
+@media (max-width: 650px) {
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .back {
+        height: 800px;
+    }
+
+    .home{
+        font-size: 2rem;
+        align-items: center;
+    }
+    
+    .about {
+        margin-left: -2rem;
+    }
+
+    .about p {
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+
+    .about h4 a{
+        font-size: 1.2rem;
+    }
+    
+    .services {
+        margin-left: -2rem;
+        overflow: hidden;
+    }
+
+    .services p{
+        margin-left: 1rem;
+    }
+    
+    .skill ul {
+        flex-direction: column;
+        width: 50%;
+        padding-left: 2rem;
+    }
+    
+    .skill ul li {
+        margin-bottom: 1rem;
+        width: 20rem;
+        height: 10rem;
+        font-size: 0.9rem;
+    }
+
+    .skill ul li img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+
+    .degree {
+        margin: 0;
+        padding: 0;
+        padding-bottom: 4rem;
+    }
+
+    .degree h4 {
+        margin-left: -2rem;
+    }
+
+    .qualify {
+        margin-left: 1.2rem;
+    }
+
+    .qualify tr td {
+        padding-right: 1rem;
+    }
+
+    .tech {
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+
+    .tech tr th {
+        margin: 0;
+        padding-left: 0;
+        padding-right: 2rem;
+    }
+
+    
+    .tech tr td {
+        margin: 0;
+        padding-left: 0;
+        padding-right: 2rem;
+    }
+
+    .contact {
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact h3,p {
+        margin-left: -2rem;
+    }
+
+    .touch{
+        margin-left: -2rem;
+    }
+
+    .touch textarea{
+
+        width:80%
+    }
+
+    .touch .name {
+        display: flex;
+        flex-direction: column;
+        width: 70rem;
+    
+    }
+    
+    input[type=name] {
+        margin-bottom: 1.5rem;
+    }
+
+}
+
+
+@media (max-width: 510px) {
+
+    .about h4 a {
+        font-size: 0.9rem;
+        margin-left: 1rem;
+    }
+
+    .about ul {
+        padding-left: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    .about ul li {
+        float: left;
+        clear: both;
+    }
+
+    .about ul li a {
+        font-size: 1rem;
+    }
+
+    .skill ul {
+        flex-direction: column;
+        width: 50%;
+        padding-left: 1rem;
+    }
+    
+    .skill ul li {
+        margin-bottom: 1rem;
+        width: 15rem;
+        height: 8rem;
+        font-size: 0.9rem;
+    }
+
+    .skill ul li img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .back {
+        height: 35rem;
+        background-position: top;
+    }
+
+    .home {
+        top: 35%;
+        font-size: 1.2rem;
+        color: #161515;
+    }
+
+    .about {
+        margin: 0;
+        padding:0;
+    }
+
+    .about h3 {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .about p {
+        margin: 0;
+        padding: 0 20px;
+        font-size: 0.7rem;
+        text-align: left;
+    }
+
+    .about h4 {
+        padding-left: 1rem;
+    }
+
+    .about h4 a{
+        padding: 0;
+        margin-bottom: 4rem;
+        font-size: 0.7rem;
+    }
+
+    .about ul{
+        padding-bottom: 8rem;
+
+    }
+
+    .about ul li {
+        margin: 0;
+        padding: 0;
+    }
+
+    .about ul li a {
+        font-size: 0.7rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .services {
+        margin-top: -6rem;
+        padding: 0;
+    }
+
+    .services h3 {
+        padding-left: 7rem ;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .services p {
+        padding: 0 0 0 2rem;
+        font-size: 0.7rem;
+    }
+
+
+    .skill ul {
+        flex-direction: column;
+        width: 10%;
+        padding-left: 2rem;
+    }
+    
+    .skill ul li {
+        margin-bottom: 1rem;
+        width: 10rem;
+        height: 8rem;
+        font-size: 0.9rem;
+    }
+
+    .skill ul li img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .degree h4 {
+        font-size: 1rem;
+        padding-left: 6rem ;
+        text-align: center;
+    }
+
+    .qualify tr td p {
+        font-size: 0.55rem;
+    }
+
+    .tech tr th,td {
+        font-size: 0.6rem;
+    }
+
+    .contact h3 {
+        font-size: 1rem;
+        padding-left: 6rem ;
+        text-align: center;
+    }
+
+    .contact p {
+        font-size: 0.8rem;
+        margin: 0;
+        margin-bottom: 1.2rem;
+        padding-left: 1rem;
+    }
+
+    
+    .touch{
+        margin-left: -2rem;
+    }
+
+    .touch textarea{
+
+        width:90%
+    }
+
+    .touch .name {
+        display: flex;
+        flex-direction: column;
+        width: 70rem;
+    
+    }
+    
+    input[type=name] {
+        margin-bottom: 1.5rem;
+    }
+
+    .contact ul {
+        margin: 0;
+        margin-bottom: 2rem;
+        padding: 0;
+        padding-left: 2rem;
+    }
+
+    .contact ul li a {
+        font-size: 0.7rem;
+    }
+
+}
